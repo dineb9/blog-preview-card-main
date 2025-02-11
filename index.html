@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: hsl(47, 88%, 63%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+      .blog-card {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 10 4px 12px rgba(0, 0, 0, 0.1);
+        background-color: white;
+      }
+
+      .badge {
+        background-color: hsl(47, 88%, 63%);
+        color: hsl(0, 0%, 7%);
+        font-size: 0.9rem;
+        font-weight: bold;
+        padding: 5px 10px;
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        border-radius: 1px;
+      }
+
+      .blog-card img .header-img {
+        width: 100%;
+        border-radius: 20px;
+      }
+      .header-img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+
+      .blog-card .blog-info {
+        margin: 15px O;
+      }
+
+      .blog-card h1 {
+        font-size: 20px;
+        color: hsl(0, 0%, 7%);
+        margin: 10px 0;
+        white-space: nowrap;
+      }
+
+      .blog-card h1:hover {
+        color: hsl(47, 88%, 63%);
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+      }
+
+      .blog-card p {
+        color: hsl(0, 0%, 7%);
+        line-height: 1.5;
+      }
+
+      .blog-avatar {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        margin-top: 15px;
+      }
+
+      .blog-avatar img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 15px;
+        object-fit: cover;
+      }
+      .blog-avatar span {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        text-align: left;
+      }
+
+      @media (min-width: 375px) {
+        body {
+          padding: 40px;
+        }
+        .blog-card {
+          max-width: 375px;
+        }
+        .blog-card img .header-img {
+          width: 100%;
+          border-radius: 20px;
+        }
+        .blog-card h1 {
+          font-size: 20px;
+          color: hsl(0, 0%, 7%);
+          margin: 10px 0;
+          white-space: nowrap;
+        }
+        .blog-card h1:hover {
+          color: hsl(47, 88%, 63%);
+          cursor: pointer;
+          transform: scale(1.05);
+          transition: all 0.3s ease;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="blog-card">
+      <img
+        src="./assets/images/illustration-article.svg"
+        alt="Blog illustration"
+        class="header-img"
+      />
+      <div class="badge">Learning</div>
+      <div class="blog-info">
+        <p>Published 21 Dec 2023</p>
+        <h1>HTML & CSS foundations</h1>
+        <p>
+          These languages are the backbone of every website, defining structure,
+          content, and presentation
+        </p>
+      </div>
+      <div class="blog-avatar">
+        <img
+          src="./assets/images/image-avatar.webp"
+          alt="Avatar of Greg Hooper"
+        />
+        <span>Greg Hooper</span>
+      </div>
+    </div>
+  </body>
+</html>
